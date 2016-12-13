@@ -16,3 +16,7 @@ function filterFunction(inputId,dropdownId) {
         }
     }
 }
+
+function toggleDiv(id) {
+    document.getElementById(id).classList.toggle("show");
+}

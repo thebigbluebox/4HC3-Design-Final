@@ -1,3 +1,57 @@
 *{
   font-family: 'Nunito Sans', sans-serif;
 }
+
+.hidden {
+  display: none;
+}
+
+.centerAlign {
+  display: block;
+  margin: 0 auto;
+}
+
+.fullWidth {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topMargin {
+  margin-top: 10px;
+}
+
+.blue {
+  background-color: #56CCF2;
+  color: white;
+}
+
+.green {
+  background-color: #6FCF97;
+  color: white;
+}
+
+.yellow {
+  background-color: #F2C94C;
+  color: black;
+}
+
+.red {
+  background-color: #EB5757;
+  color: white;
+}
+
+.lightgray {
+    background-color: #BDBDBD;
+  color: black;
+}
+
+.gray {
+  background-color: #828282;
+  color: white;
+}
+
+.darkgray {
+  background-color: #4F4F4F;
+  color: white;
+}
