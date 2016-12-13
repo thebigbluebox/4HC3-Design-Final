@@ -4,6 +4,7 @@
 }
 
 .courseItem {
+    margin-top: 10px;
     color: black;
     background-color: #F2C94C;
     -webkit-border-top-left-radius: 10px;
@@ -37,7 +38,7 @@
     padding: 4px;
 }
 
-.courseItem-Content > h6{
+.courseItem-Content > h6, h4{
     margin: 0px;
 }
 
