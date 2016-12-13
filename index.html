@@ -333,9 +333,9 @@
       <button class="button blueButton">Open Filter</button>
       <div class="hidden searchFilters">
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-          <div id="myDropdown" class="dropdown-content">
-            <input type="text" class="circularTextInput" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <button onclick="dropDownFunc('yearListDropDown')" class="dropbtn">Program Year</button>
+          <div id="yearListDropDown" class="dropdown-content">
+            <input type="text" class="circularTextInput" placeholder="Search.." id="yearListDropDownSearchInput" onkeyup="filterFunction('yearListDropDownSearchInput','yearListDropDown')">
             <a href="#about">1</a>
             <a href="#base">2</a>
             <a href="#blog">3</a>
@@ -347,7 +347,7 @@
         </br>
         <!-- End of first dropdown begin second one below-->
         <div class="dropdown">
-          <button onclick="myFunction('programListDropDown')" class="dropbtn">Dropdown</button>
+          <button onclick="dropDownFunc('programListDropDown')" class="dropbtn">Program</button>
           <div id="programListDropDown" class="dropdown-content">
             <input type="text" class="circularTextInput" placeholder="Search.." id="programListDropDownSearchInput" onkeyup="filterFunction('programListDropDownSearchInput','programListDropDown')">
             <a href="#about">Engineering</a>
