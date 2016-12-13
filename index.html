@@ -4,24 +4,25 @@
 <head>
   <title>Course Selection</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/flexboxToolKit.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/calendar.css">
   <link rel="stylesheet" href="styles/courseSelection.css">
   <link rel="stylesheet" href="styles/panels.css">
   <link rel="stylesheet" href="styles/objects.css">
+  <link rel="stylesheet" href="styles/input.css">
+  <link rel="stylesheet" href="styles/dropdown.css">
 </head>
 
-<body>
-  <header>
-    <h1>Course Selection <span id="selectionDate" class="bold">2016</span> | <a href="./winter.html" class="selected">Term 1</a>      | <a href="./summer.html">Term 2</a> <a href="./summer.html"><i class="fa fa-times" aria-hidden="true"></i></a> </h1>
-    <h3><span id="beginMonth">September</span> - <span id="endMonth">December</span> Schedule</h3>
-    <nav></nav>
-  </header>
+<body class="container">
   <!-- Calendar Portion -->
   <section id="calendar">
     <header>
-      <h1>Selecting Core for <span id="currentCourse">Computer Science 1MA3</span></h1>
+      <h1>Course Selection <span id="selectionDate" class="bold">2016</span> | <a href="./winter.html" class="selected">Term 1</a>        | <a href="./summer.html">Term 2</a> <a href="./summer.html"><i class="fa fa-times" aria-hidden="true"></i></a> </h1>
+      <h3><span id="beginMonth">September</span> - <span id="endMonth">December</span> Schedule</h3>
+      <nav></nav>
     </header>
     <article>
       <table>
@@ -53,32 +54,11 @@
               <span class="long">Friday</span>
               <span class="short">Fri</span>
             </th>
-            <th>
-              <span class="day">6</span>
-              <span class="long">Saturday</span>
-              <span class="short">Sat</span>
-            </th>
-            <th>
-              <span class="day">7</span>
-              <span class="long">Sunday</span>
-              <span class="short">Sun</span>
-            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="hour" rowspan="4"><span>1:00</span></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
+            <td class="hour" rowspan="4"><span>8:00AM</span></td>
             <td></td>
             <td></td>
             <td></td>
@@ -91,22 +71,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="hour" rowspan="4"><span>2:00</span></td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -119,6 +85,12 @@
             <td></td>
             <td></td>
             <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>9:00AM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
@@ -128,12 +100,15 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
             <td></td>
             <td></td>
             <td></td>
@@ -142,18 +117,7 @@
           </tr>
 
           <tr>
-            <td class="hour" rowspan="4"><span>3:00</span></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
+            <td class="hour" rowspan="4"><span>10:00AM</span></td>
             <td></td>
             <td></td>
             <td></td>
@@ -166,22 +130,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="hour" rowspan="4"><span>4:00</span></td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -194,31 +144,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="hour" rowspan="4"><span>5:00</span></td>
-            <td></td>
-            <td></td>
+            <td class="hour" rowspan="4"><span>10:00AM</span></td>
             <td></td>
             <td></td>
             <td></td>
@@ -231,31 +159,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="hour" rowspan="4"><span>6:00</span></td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -268,31 +173,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="hour" rowspan="4"><span>7:00</span></td>
-            <td></td>
-            <td></td>
+            <td class="hour" rowspan="4"><span>11:00AM</span></td>
             <td></td>
             <td></td>
             <td></td>
@@ -305,31 +188,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="hour" rowspan="4"><span>8:00</span></td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -342,6 +202,12 @@
             <td></td>
             <td></td>
             <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>12:00PM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
@@ -351,12 +217,73 @@
             <td></td>
             <td></td>
             <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>1:00PM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>2:00PM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
             <td></td>
             <td></td>
             <td></td>
@@ -367,6 +294,7 @@
       </table>
     </article>
     <footer>
+      <h1>Selecting Core for <span id="currentCourse">Computer Science 1MA3</span></h1>
       <button>Previous</button>
       <button>Next</button>
     </footer>
@@ -407,7 +335,7 @@
         <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">Dropdown</button>
           <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <input type="text" class="circularTextInput" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
             <a href="#about">1</a>
             <a href="#base">2</a>
             <a href="#blog">3</a>
@@ -416,11 +344,12 @@
             <a href="#support">6</a>
           </div>
         </div>
+        </br>
         <!-- End of first dropdown begin second one below-->
         <div class="dropdown">
           <button onclick="myFunction('programListDropDown')" class="dropbtn">Dropdown</button>
           <div id="programListDropDown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="programListDropDownSearchInput" onkeyup="filterFunction('programListDropDown','programListDropDownSearchInput')">
+            <input type="text" class="circularTextInput" placeholder="Search.." id="programListDropDownSearchInput" onkeyup="filterFunction('programListDropDownSearchInput','programListDropDown')">
             <a href="#about">Engineering</a>
             <a href="#base">Humanities</a>
             <a href="#blog">Communication Science</a>
@@ -447,6 +376,6 @@
     </article>
   </section>
 </body>
-<script src="js/dropDown.js"></script>
+<script src="js/dropdown.js"></script>
 
 </HTML>

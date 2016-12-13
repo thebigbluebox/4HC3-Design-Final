@@ -1,0 +1,27 @@
+#calendar{
+    order: 1;
+    flex-grow: 3;
+    width: 70%;
+    height: 100vh;
+    overflow-y:scroll;
+}
+
+#courseList{
+    order: 2;
+    flex-grow: 3;
+    width: 15%;
+    height: 100vh;
+    background-color: #16A4C5;
+    color: white;
+    padding: 0 2vw;
+}
+
+#courseSearch{
+    order: 3;
+    flex-grow: 3;
+    width: 15%;
+    height: 100vh;
+    background-color: #2F80ED;
+    color: white;
+    padding: 0 2vw;
+}

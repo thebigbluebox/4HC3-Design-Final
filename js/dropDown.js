@@ -1,12 +1,12 @@
-function myFunction(idname) {
-    document.getElementById(idname).classList.toggle("show");
+function myFunction(dropdownId) {
+    document.getElementById(dropdownId).classList.toggle("show");
 }
 
-function filterFunction() {
+function filterFunction(inputId,dropdownId) {
     var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
+    input = document.getElementById(inputId);
     filter = input.value.toUpperCase();
-    div = document.getElementById("myDropdown");
+    div = document.getElementById(dropdownId);
     a = div.getElementsByTagName("a");
     for (i = 0; i < a.length; i++) {
         if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
