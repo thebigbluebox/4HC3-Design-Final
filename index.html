@@ -1,421 +1,452 @@
 <!DOCTYPE HTML>
+<HTML>
 
-<!-- Element attributes are logically unordered, so could we order them alphabetically, like we do with CSS properties? -->
-<!-- X-UA-Compatible is not a standard -->
+<head>
+  <title>Course Selection</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/calendar.css">
+  <link rel="stylesheet" href="styles/courseSelection.css">
+  <link rel="stylesheet" href="styles/panels.css">
+  <link rel="stylesheet" href="styles/objects.css">
+</head>
 
-<html class="no-js" lang="en-US">
-	<head>
-		<title>@page-title@ - @site-title@</title>
+<body>
+  <header>
+    <h1>Course Selection <span id="selectionDate" class="bold">2016</span> | <a href="./winter.html" class="selected">Term 1</a>      | <a href="./summer.html">Term 2</a> <a href="./summer.html"><i class="fa fa-times" aria-hidden="true"></i></a> </h1>
+    <h3><span id="beginMonth">September</span> - <span id="endMonth">December</span> Schedule</h3>
+    <nav></nav>
+  </header>
+  <!-- Calendar Portion -->
+  <section id="calendar">
+    <header>
+      <h1>Selecting Core for <span id="currentCourse">Computer Science 1MA3</span></h1>
+    </header>
+    <article>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <span class="day">1</span>
+              <span class="long">Monday</span>
+              <span class="short">Mon</span>
+            </th>
+            <th>
+              <span class="day">2</span>
+              <span class="long">Tuesday</span>
+              <span class="short">Tue</span>
+            </th>
+            <th>
+              <span class="day">3</span>
+              <span class="long">Wendsday</span>
+              <span class="short">We</span>
+            </th>
+            <th>
+              <span class="day">4</span>
+              <span class="long">Thursday</span>
+              <span class="short">Thur</span>
+            </th>
+            <th>
+              <span class="day active">5</span>
+              <span class="long">Friday</span>
+              <span class="short">Fri</span>
+            </th>
+            <th>
+              <span class="day">6</span>
+              <span class="long">Saturday</span>
+              <span class="short">Sat</span>
+            </th>
+            <th>
+              <span class="day">7</span>
+              <span class="long">Sunday</span>
+              <span class="short">Sun</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hour" rowspan="4"><span>1:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>2:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
 
-		<meta charset="UTF-8" />
-		<meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
-		<meta content="index, follow" name="robots" />
-		<meta content="@site-description@" name="description" />
-		<meta content="@site-author@" name="author" />
+          <tr>
+            <td class="hour" rowspan="4"><span>3:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>4:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>5:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>6:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>7:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>8:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <footer>
+      <button>Previous</button>
+      <button>Next</button>
+    </footer>
+  </section>
+  <section id="courseList">
+    <header>
+      <h3 class="whiteText">Selected Course List</h3>
+    </header>
+    <article>
+      <ul>
+        <li class="courseItem">
+          <div>
+            <h3 class="courseItem-Title">Course Name</h3>
+            <h6><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h6>
+            <a href="courseSyb.html" class="courseOutLine">Course Outline</a>
+            <p>Dr.Fei Cheng</p>
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <footer>
+      <p id="courseLeft">You Have N courses left to complete</p>
+      <button class="button redButton">Finish</button>
+    </footer>
+  </section>
+  <section id="courseSearch">
+    <header>
+      <h3 class="whiteText">Course Search</h3>
+      <div>
+        <form action="search()">
+          <input class="circularTextInput" type="text" name="searchVal" placeholder="Course Code">
+          <button class="circleButton"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      <button class="button blueButton">Open Filter</button>
+      <div class="hidden searchFilters">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#about">1</a>
+            <a href="#base">2</a>
+            <a href="#blog">3</a>
+            <a href="#contact">4</a>
+            <a href="#custom">5</a>
+            <a href="#support">6</a>
+          </div>
+        </div>
+        <!-- End of first dropdown begin second one below-->
+        <div class="dropdown">
+          <button onclick="myFunction('programListDropDown')" class="dropbtn">Dropdown</button>
+          <div id="programListDropDown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="programListDropDownSearchInput" onkeyup="filterFunction('programListDropDown','programListDropDownSearchInput')">
+            <a href="#about">Engineering</a>
+            <a href="#base">Humanities</a>
+            <a href="#blog">Communication Science</a>
+            <a href="#blog">Computer Science</a>
+            <a href="#contact">Arts and Science</a>
+            <a href="#custom">Commerce</a>
+          </div>
+        </div>
+        <!--End of search list dropdowns-->
+      </div>
+    </header>
+    <article>
+      <ul>
+        <li class="courseItem">
+          <div>
+            <h3 class="courseItem-Title">Course Name</h3>
+            <h6><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h6>
+            <a href="courseSyb.html" class="courseOutLine">Course Outline</a>
+            <p>Dr.Fei Cheng</p>
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </section>
+</body>
+<script src="js/dropDown.js"></script>
 
-		<link href="@site-icon@" rel="shortcut icon" />
-		<link href="/styles/main.css" media="screen" rel="stylesheet" type="text/css" />
-
-		<script src="@site-js@" type="text/javascript"></script>
-	</head>
-	<body>
-		<div id="document" role="document">
-			<a href="#main" id="skip-to-content">@skip-to-content@</a>
-			<header id="banner" role="banner">
-				<hgroup id="heading">
-					<h1 class="site-title">
-						<a href="@site-url@" title="@go-to@ @site-title@">
-							<span>@site-title@</span>
-						</a>
-					</h1>
-					<h2 class="page-title">
-						<a href="@page-url@" title="@go-to@ @page-title@">
-							<span>@page-title@</span>
-						</a>
-					</h2>
-				</hgroup>
-				<nav id="navigation">
-					<h1>
-						<span>@navigation@</span>
-					</h1>
-					<ul>
-						<li>
-							<a href="@page-1-href@"><span>@page-1-label@</span></a>
-						</li>
-						<li class="selected">
-							<a href="@page-2-href@"><span>@page-2-label@</span></a>
-						</li>
-						<li>
-							<a href="@page-3-href@"><span>@page-3-label@</span></a>
-						</li>
-						<li>
-							<a href="@page-4-href@"><span>@page-4-label@</span></a>
-						</li>
-						<li>
-							<a href="@page-5-href@"><span>@page-5-label@</span></a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div id="content">
-				<nav id="breadcrumbs">
-					<h1>
-						<span>@breadcrumbs@</span>
-					</h1>
-					<p>
-						<a class="first" href="@site-href@" rel="index up"><span>@site-label@</span></a>
-						<span class="separator">&gt;</span>
-						<a class="last" href="#main"><span>@page-label@</span></a>
-					</p>
-				</nav>
-				<div id="main" role="main">
-					<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>
-        <span class="day">1</span>
-        <span class="long">Monday</span>
-        <span class="short">Mon</span>
-      </th>
-      <th>
-        <span class="day">2</span>
-        <span class="long">Tuesday</span>
-        <span class="short">Tue</span>
-      </th>
-      <th>
-        <span class="day">3</span>
-        <span class="long">Wendsday</span>
-        <span class="short">We</span>
-      </th>
-      <th>
-        <span class="day">4</span>
-        <span class="long">Thursday</span>
-        <span class="short">Thur</span>
-      </th>
-      <th>
-        <span class="day active">5</span>
-        <span class="long">Friday</span>
-        <span class="short">Fri</span>
-      </th>
-      <th>
-        <span class="day">6</span>
-        <span class="long">Saturday</span>
-        <span class="short">Sat</span>
-      </th>
-      <th>
-        <span class="day">7</span>
-        <span class="long">Sunday</span>
-        <span class="short">Sun</span>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="hour" rowspan="4"><span>1:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hour" rowspan="4"><span>2:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    
-    <tr>
-      <td class="hour" rowspan="4"><span>3:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hour" rowspan="4"><span>4:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hour" rowspan="4"><span>5:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hour" rowspan="4"><span>6:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hour" rowspan="4"><span>7:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hour" rowspan="4"><span>8:00</span></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-				</div>
-			</div>
-			<footer id="contentinfo" role="contentinfo">
-				@footer@
-			</footer>
-		</div>
-	</body>
-</html>
+</HTML>
