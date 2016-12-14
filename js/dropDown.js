@@ -34,3 +34,8 @@ function selectAndChange(value, LabelName, CloseDiv){
     $("#"+LabelName).html("[" + value + "]");
     $("#"+CloseDiv).removeClass("show")
 }
+
+function hideAndHide(calendarClassName, itemClassName){
+    $("." + calendarClassName).css("display","none");
+    $("." + itemClassName).css("display","none");
+}
