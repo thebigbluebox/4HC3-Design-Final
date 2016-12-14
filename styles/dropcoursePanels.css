@@ -43,4 +43,15 @@
     color: white;
     padding: 0 2vw;
     overflow-y:scroll;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#courseSearch > article {
+    flex: 1;
+}
+
+#courseSearch > footer {
+    padding-bottom: 1vh;
 }
