@@ -71,3 +71,7 @@
 .coursetimePerWeek{
     float: right;
 }
+
+#searchProgramValue, #searchYearValue{
+    background-color:black;
+}
