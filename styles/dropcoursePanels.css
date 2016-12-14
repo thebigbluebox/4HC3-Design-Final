@@ -1,0 +1,46 @@
+#calendar{
+    order: 1;
+    flex-grow: 3;
+    width: 70%;
+    height: 100vh;
+    overflow-y:scroll;
+    background-color: #FAFAFA;
+    color: gray;
+}
+
+#calendar > header {
+    padding: 0px 1vh;
+    font-weight: bold;
+}
+
+#courseList{
+    order: 2;
+    flex-grow: 3;
+    width: 15%;
+    height: 100vh;
+    background-color: #16A4C5;
+    color: white;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+}
+
+#courseList > article {
+    flex: 1;
+}
+
+#courseList > footer {
+    padding-bottom: 1vh;
+}
+
+#courseSearch{
+    order: 3;
+    flex-grow: 3;
+    width: 15%;
+    height: 100vh;
+    background-color: #F2994A;
+    color: white;
+    padding: 0 2vw;
+    overflow-y:scroll;
+}

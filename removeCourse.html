@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+  <title>Course Selection</title>
+  <link href="assets/googleFont/googlefont.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/flexboxToolKit.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/calendar.css">
+  <link rel="stylesheet" href="styles/courseSelection.css">
+  <link rel="stylesheet" href="styles/dropcoursePanels.css">
+  <link rel="stylesheet" href="styles/objects.css">
+  <link rel="stylesheet" href="styles/input.css">
+  <link rel="stylesheet" href="styles/dropdown.css">
+  <script type="text/javascript" src="js/general.js"></script>
+</head>
+
+<body class="container">
+  <!-- Calendar Portion -->
+  <section id="calendar">
+    <header>
+      <h1>Course Deletion <span id="selectionDate" class="bold">2016</span> | <a href="#" class="selected" onclick="notImplemented();">Term 1</a>        | <a href="#" onclick="notImplemented();">Term 2</a> <a href="#" onclick="notImplemented();"><i class="fa fa-lg fa-times-circle" style="color:#EB5757" aria-hidden="true"></i></a>        </h1>
+      <h2><span id="beginMonth">September</span> - <span id="endMonth">December</span> 2016 Schedule</h2>
+      <div class="container space_between">
+        <div class="">
+          <h1 id="inital" style="margin:2px">Please select a course to be deleted from the schedule</h1>
+          <h1 id="warningmessage" class="hidden" style="margin:2px">Please select an incomplete course for schedule picking</h1>
+          <h1 id="selectingCoreMessage"  class="hidden" style="margin:2px;">Selecting Core for Comp Sci 1JC3</h1>
+          <h1 id="selectingTutorialeMessage"  class="hidden" style="margin:2px;">Selecting Tutorial for Comp Sci 1JC3</h1>
+        </div>
+      </div>
+
+    </header>
+    <article>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <span class="day">1</span>
+              <span class="long">Monday</span>
+              <span class="short">Mon</span>
+            </th>
+            <th>
+              <span class="day">2</span>
+              <span class="long">Tuesday</span>
+              <span class="short">Tue</span>
+            </th>
+            <th>
+              <span class="day">3</span>
+              <span class="long">Wendsday</span>
+              <span class="short">We</span>
+            </th>
+            <th>
+              <span class="day">4</span>
+              <span class="long">Thursday</span>
+              <span class="short">Thur</span>
+            </th>
+            <th>
+              <span class="day active">5</span>
+              <span class="long">Friday</span>
+              <span class="short">Fri</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hour" rowspan="2"><span>8:00AM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="2"><span>9:00AM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><class class="HA3C1">GEOG 1HA3
+            <br> Core 1</class></td>
+            <td></td>
+            <td><class class="JC3T2"> COMP SCI 1JC3
+              <br>Tutorial 2</class></td>
+            <td><class class="HA3C1">GEOG 1HA3
+            <br> Core 1</class></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="2"><span>10:00AM</span></td>
+            <td></td>
+            <td><class class="HA3C1">Mercier
+            <br> MDCL 1305</class></td>
+            <td></td>
+            <td><class class="JC3T2"> BSB 249</class></td>
+            <td><class class="HA3C1">Mercier
+            <br> MDCL 1305</class></td>
+          </tr>
+          <tr>
+            <td><class class="ZZ3C1">MATH 2ZZ3
+            <br> Core 1</class></td>
+            <td></td>
+            <td><class class="ZZ3C1">MATH 2ZZ3
+            <br> Core 1</class></td>
+            <td><class class="JC3T2"></class></td>
+            <td><class class="ZZ3C1">MATH 2ZZ3
+            <br> Core 1</class></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="2"><span>11:00AM</span></td>
+            <td><class class="ZZ3C1">Wolkowicz
+            <br> LRW B1007</class></td>
+            <td></td>
+            <td><class class="ZZ3C1">Wolkowicz
+            <br> LRW B1007</class></td>
+            <td><class class="JC3T2"></class></td>
+            <td><class class="ZZ3C1">Wolkowicz
+            <br> LRW B1007</class></td>
+          </tr>
+          <tr>
+            <td><class class="ZZ3T1"> MATH 2ZZ3
+            <br> Tutorial 1</class></td>
+            <td></td>
+            <td><class class="JC3T1"> COMP SCI 1JC3
+              <br>Tutorial 1</class></td>
+            <td></td>
+            <td><class class="ZZ3T2"> MATH 2ZZ3
+            <br> Tutorial 2</class></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="2"><span>12:00PM</span></td>
+            <td><class class="ZZ3T1"> TSH B128</class></td>
+            <td></td>
+            <td>
+              <class class="JC3T1"> BSB 249</class>
+            </td>
+            <td></td>
+            <td><class class="ZZ3T1"> TSH B128</class></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <class class="JC3T1"></class>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="2"><span>1:00PM</span></td>
+            <td></td>
+            <td></td>
+            <td>
+              <class class="JC3T1"></class>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><class class="JC3C1"> COMP SCI 1JC3
+              <br>Core 1</class></td>
+            <td></td>
+            <td><class class="JC3C1"> COMP SCI 1JC3
+              <br>Core 1</class></td>
+            <td><class class="JC3C1"> COMP SCI 1JC3
+              <br> Core 1</class></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="2"><span>2:00PM</span></td>
+            <td><class class ="JC3C1"> Anand
+            <br>MDCL 1105</class></td>
+            <td></td>
+            <td><class class ="JC3C1"> Anand
+            <br>MDCL 1105</class></td>
+            <td><class class ="JC3C1"> Anand
+            <br>MDCL 1105</class></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><class class="JC3T3">COMP SCI 1JC3
+            <br> Tutorial 3</class></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="2"><span>3:00PM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><class class="JC3T3">BSB 249</class></td>
+          </tr>
+          <tr>
+            <td><class class="MD3T1">COMP SCI 1MD3
+            <br> Tutorial 1</class></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><class class="JC3T3"></class></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="2"><span>4:00PM</span></td>
+            <td><class class="MD3T2">BSB 249</class></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><class class="JC3T3"></class></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><class class="MD3T2">COMP SCI 1MD3
+            <br> Tutorial 2</class></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="2"><span>5:00PM</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><class class="MD3T2">BSB 249</class></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><class class="MD3C1">COMP SCI 1MD3
+            <br> Core 1</class></td>
+            <td></td>
+            <td><class class="MD3C1">COMP SCI 1MD3
+            <br> Core 1</class></td>
+            <td><class class="MD3C1">COMP SCI 1MD3
+            <br> Core 1</class></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="2"><span>6:00PM</span></td>
+            <td><class class="MD3C1">Sekerinski
+            <br> ITB AB102</class></td>
+            <td></td>
+            <td><class class="MD3C1">Sekerinski
+            <br> ITB AB102</class></td>
+            <td><class class="MD3C1">Sekerinski
+            <br> ITB AB102</class></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </section>
+  <section id="courseList">
+    <header>
+      <h3 class="whiteText" style="text-align:center;">Current Course List</h3>
+    </header>
+    <article>
+      <ul class="courseList">
+        <li class="courseItemDone" id="ccHA3">
+          <h3 class="courseItem-Title">Geog 1HA3 Human Geography</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core</span><span class="coursetimePerWeek">2 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href="#" onclick="deleteCourse('HA3')"><i class="fa fa-2x fa-times-circle" style="color:#EB5757" aria-hidden="true"></i></a><span style="float:right">Dr.Michael Mercier</span></h4>
+
+          </div>
+        </li>
+        <li class="courseItemDone hidden" id="JC3done">
+          <h3 class="courseItem-Title">Comp Sci 1JC3 Intro to Computational Thinking</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href="#" onclick="deleteCourse('JC3','JC3done')"><i class="fa fa-2x fa-times-circle" style="color:#EB5757" aria-hidden="true"></i></a><span style="float:right">Dr.Anand</span></h4>
+          </div>
+        </li>
+         <li class="courseItem hidden" id="JC3new">
+          <h3 class="courseItem-Title">Comp Sci 1JC3  Intro to Computational Thinking</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href="#" onclick="deleteCourse('JC3','JC3new')"><i class="fa fa-2x fa-times-circle" style="color:#EB5757" aria-hidden="true"></i></a><span style="float:right">Dr.Sekerinski</span></h4>
+
+          </div>
+        </li>
+        <li class="courseItemDone" id="ccMD3">
+          <h3 class="courseItem-Title">Comp Sci 1MD3 Introduction to Programming</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href="#" onclick="deleteCourse('MD3')"><i class="fa fa-2x fa-times-circle" style="color:#EB5757" aria-hidden="true"></i></a><span style="float:right">Dr.Sekerinski</span></h4>
+
+          </div>
+        </li>
+        <li class="courseItemDone" id="ccZZ3">
+          <h3 class="courseItem-Title">Mathematics 2ZZ3 Engineering Mathematics IV</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href="#" onclick="deleteCourse('ZZ3')"><i class="fa fa-2x fa-times-circle" style="color:#EB5757" aria-hidden="true"></i></a><span style="float:right">Dr.Wolkowicz</span></h4>
+
+          </div>
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section id="courseSearch">
+    <header>
+      <h3 class="whiteText" style="text-align:center;">Couses To Be Dropped</h3>
+    </header>
+    <article>
+      <ul class="courseList hidden">
+        <li class="courseItem" id="econ1b03">
+          <h3 class="courseItem-Title">Econ 1B03 Introductory Microeconomics</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core</span><span class="coursetimePerWeek">3 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href=""><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i></a><span style="float:right">Dr.Hannah Barbra</span></h4>
+
+          </div>
+        </li>
+        <li class="courseItem" id="econ1bb3">
+          <h3 class="courseItem-Title">Econ 1BB3 Introductory Macroeconomics</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core</span><span class="coursetimePerWeek">3 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href=""><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i></a><span style="float:right">Bridget O'Shaughnessy</span></h4>
+
+          </div>
+        </li>
+        <li class="courseItem" id="JC3search">
+          <h3 class="courseItem-Title">Comp Sci 1JC3 Intro to Computational Thinking</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href="#" onclick="showJc3()"><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i></a><span style="float:right">Dr.Anand</span></h4>
+
+          </div>
+        </li>
+        <li class="courseItem">
+          <h3 class="courseItem-Title">Psychology 1XO3 Introduction to Behaviour Psychology</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">6 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href=""><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i></a><span style="float:right">Dr.Joe Kim</span></h4>
+
+          </div>
+        </li>
+        <li class="courseItem">
+          <h3 class="courseItem-Title">Psychology 1XX3 Introduction to Neuroscience</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">6 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><a href="#"><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i></a><span style="float:right">Dr.Joe Kim</span></h4>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </section>
+</body>
+<script src="assets/jquery-3.1.1.min.js"></script>
+<script src="js/globalVariable.js"></script>
+<script src="js/dropDown.js"></script>
+<script src="js/courseSearch.js"></script>
+<script src="js/coursePopulation.js"></script>
+
+</HTML>
