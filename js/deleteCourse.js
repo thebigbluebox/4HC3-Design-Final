@@ -31,3 +31,22 @@ function commitDropCourses(){
     }
     }
 }
+
+function addBackCourse(classType,idType){
+ var confirmation = confirm("Are you sure you want to add back " + classType + "?");
+ if(confirmation){
+        $("." + classType + "C1").removeAttr('style');
+        $("." + classType + "T1").removeAttr('style');
+        $("." + classType + "T2").removeAttr('style');
+        $("." + classType + "T3").removeAttr('style');
+        $("#cc" + classType).removeAttr('style');
+        $("#" + idType).css("display", "initial");
+        $("#cc" + classType + "d").addClass("hidden");
+        var i = droppedCourses.indexOf(classType);
+        if(i != -1) {
+	       console.log(droppedCourses.splice(i, 1));
+        }
+     
+ }
+
+}
