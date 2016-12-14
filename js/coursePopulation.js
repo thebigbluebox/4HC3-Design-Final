@@ -3,8 +3,6 @@ function finish() {
     $("#completionPopup").css("display", "block");
 }
 
-
-
 // This is when we delete a course and it will remove the classes
 function deleteCourse(classType, idType) {
     var confirmation = confirm("are you sure you want to delete " + classType);
@@ -16,14 +14,6 @@ function deleteCourse(classType, idType) {
         $("#cc" + classType).css("display", "none");
         $("#" + idType).css("display", "none");
     }
-
-}
-
-// This will select the course that is clicked on
-function selectValue(classType, id) {
-    $("." + classType).css("display", "none");
-    $("#id" + id).css("display", "block");
-    return true;
 }
 
 // Adding a course from the search into the other bar
@@ -79,7 +69,7 @@ $(".JC3T1").click(function () {
     $("#numberCoursesLeft").html("0");
     $("#finishButton").addClass("red");
     $("#inital").css("display", "block");
-    $("#JC3new").css("background-color", "#27AE60")
+    $("#JC3new").css("background-color", "#6FCF97")
 });
 
 $(".JC3T2").click(function () {
@@ -92,7 +82,7 @@ $(".JC3T2").click(function () {
     $("#numberCoursesLeft").html("0");
     $("#finishButton").addClass("red");
     $("#inital").css("display", "block");
-    $("#JC3new").css("background-color", "#27AE60")
+    $("#JC3new").css("background-color", "#6FCF97")
 });
 
 $(".JC3T3").click(function () {
@@ -105,7 +95,7 @@ $(".JC3T3").click(function () {
     $("#numberCoursesLeft").html("0");
     $("#finishButton").addClass("red");
     $("#inital").css("display", "block");
-    $("#JC3new").css("background-color", "#27AE60")
+    $("#JC3new").css("background-color", "#6FCF97")
 });
 
 // code sourced from http://stackoverflow.com/questions/12786810/hover-on-element-and-highlight-all-elements-with-the-same-class
@@ -131,5 +121,13 @@ hoverByClass("JC3T1", "yellow", "#F2E2BA");
 hoverByClass("JC3T2", "yellow", "#F2E2BA");
 hoverByClass("JC3T3", "yellow", "#F2E2BA");
 
+function gotoNext(){
+    var nextElement = $("").next();
+    var classTitle = $("")
+    $().html("")
+}
 
+$(document).ready(function(){
+    $("#removeCourseLink").delay(500).fadeOut(3000)
+});
 //hoverByClass("","yellow");
