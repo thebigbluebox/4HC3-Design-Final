@@ -14,6 +14,17 @@
     background-color: #16A4C5;
     color: white;
     padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+}
+
+#courseList > article {
+    flex: 1;
+}
+
+#courseList > footer {
+    padding-bottom: 1vh;
 }
 
 #courseSearch{
@@ -24,4 +35,5 @@
     background-color: #2F80ED;
     color: white;
     padding: 0 2vw;
+    overflow-y:scroll;
 }

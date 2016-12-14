@@ -3,7 +3,7 @@
 
 <head>
   <title>Course Selection</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="assets/googleFont/googlefont.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/flexboxToolKit.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -293,10 +293,12 @@
         </tbody>
       </table>
     </article>
-    <footer>
+    <footer style="margin-bottom:20px">
       <h1>Selecting Core for <span id="currentCourse">Computer Science 1MA3</span></h1>
-      <button>Previous</button>
-      <button>Next</button>
+      <div style="width: 400px" class="centerAlign">
+        <button class="button-med">Previous</button>
+        <button class="button-med">Next</button>
+      </div>
     </footer>
   </section>
   <section id="courseList">
@@ -341,11 +343,47 @@
             
           </div>
         </li>
+        <li class="courseItem">
+          <h3 class="courseItem-Title">Course Name</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i><span style="float:right">Dr.Fei Cheng</span></h4>
+            
+          </div>
+        </li>
+        <li class="courseItem">
+          <h3 class="courseItem-Title">Course Name</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i><span style="float:right">Dr.Fei Cheng</span></h4>
+            
+          </div>
+        </li>
+        <li class="courseItem">
+          <h3 class="courseItem-Title">Course Name</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i><span style="float:right">Dr.Fei Cheng</span></h4>
+            
+          </div>
+        </li>
+        <li class="courseItem">
+          <h3 class="courseItem-Title">Course Name</h3>
+          <div class="courseItem-Content">
+            <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
+            <a href="courseSyb.html" class="courseOutLine">Outline</a>
+            <h4><i class="greenText fa fa-2x fa-plus-circle" aria-hidden="true"></i><span style="float:right">Dr.Fei Cheng</span></h4>
+            
+          </div>
+        </li>
       </ul>
     </article>
     <footer>
       <p id="courseLeft">You have N courses left to complete</p>
-      <button class="centerAlign button red">Finish</button>
+      <button class="centerAlign button red button-lg">Finish</button>
     </footer>
   </section>
   <section id="courseSearch">
@@ -353,18 +391,18 @@
       <h3 class="whiteText">Course Search</h3>
       <div>
         <form action="search()">
-          <input class="" type="text" name="searchVal" placeholder="Course Code">
-          <button class="circleButton"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <input class="" type="text" name="searchVal" placeholder="Course Code" style="width:60%">
+          <button style="width:30% !important" class="circleButton"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
       </div>
 
       
-      <button class="blue button  centerAlign topMargin" onclick="toggleDiv('searchFilters')">Open Filter</button>
+      <button class="blue button button-lg centerAlign topMargin" onclick="toggleDiv('searchFilters')">Open Filter</button>
       
       
       <div class="hidden searchFilters" id="searchFilters">
         <div class="dropdown">
-          <button onclick="dropDownFunc('yearListDropDown')" class="centerAlign dropbtn darkgray topMargin">Program Year</button>
+          <button onclick="dropDownFunc('yearListDropDown')" class="centerAlign dropbtn button-lg darkgray topMargin">Program Year</button>
           <div id="yearListDropDown" class="dropdown-content">
             <input type="text" class=" fullWidth" placeholder="Search.." id="yearListDropDownSearchInput" onkeyup="filterFunction('yearListDropDownSearchInput','yearListDropDown')">
             <a href="#about">1</a>
@@ -378,7 +416,7 @@
         </br>
         <!-- End of first dropdown begin second one below-->
         <div class="dropdown">
-          <button onclick="dropDownFunc('programListDropDown')" class="centerAlign dropbtn darkgray topMargin">Program</button>
+          <button onclick="dropDownFunc('programListDropDown')" class="centerAlign dropbtn button-lg darkgray topMargin">Program</button>
           <div id="programListDropDown" class="dropdown-content">
             <input type="text" class=" fullWidth" placeholder="Search.." id="programListDropDownSearchInput" onkeyup="filterFunction('programListDropDownSearchInput','programListDropDown')">
             <a href="#about">Engineering</a>
