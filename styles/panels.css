@@ -4,6 +4,13 @@
     width: 70%;
     height: 100vh;
     overflow-y:scroll;
+    background-color: #626E7E;
+    color: white;
+}
+
+#calendar > header {
+    padding: 0px 1vh;
+    font-weight: bold;
 }
 
 #courseList{
