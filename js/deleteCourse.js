@@ -8,5 +8,10 @@ function deleteCourse(classType, idType) {
         $("." + classType + "T3").css("display", "none");
         $("#cc" + classType).css("display", "none");
         $("#" + idType).css("display", "none");
+        dropCourse(classType,idType);
     }
+}
+
+function dropCourse(classType,idType){
+    $("#cc" + classType + "d").removeClass("hidden");
 }
