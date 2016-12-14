@@ -373,9 +373,11 @@
             <input type="text" class=" fullWidth" placeholder="Search.." id="programListDropDownSearchInput" onkeyup="filterFunction('programListDropDownSearchInput','programListDropDown')">
             <a onclick="selectAndChange('Engineering','searchProgramValue','programListDropDown')">Engineering</a>
             <a onclick="selectAndChange('Arts & Humanities','searchProgramValue','programListDropDown')">Arts and Humanities</a>
+            <a onclick="selectAndChange('Economics','searchProgramValue','programListDropDown')">Economics</a>
             <a onclick="selectAndChange('Integrated Science','searchProgramValue','programListDropDown')">Integrated Sciences</a>
             <a onclick="selectAndChange('Nursing','searchProgramValue','programListDropDown')">Nursing</a>
             <a onclick="selectAndChange('Commerce','searchProgramValue','programListDropDown')">Commerce</a>
+            <a onclick="selectAndChange('Computer Science','searchProgramValue','programListDropDown')">Computer Science</a>
             <a onclick="selectAndChange('Psychology','searchProgramValue','programListDropDown')">Psychology</a>
             <a onclick="selectAndChange('Neuroscience','searchProgramValue','programListDropDown')">Neuroscience</a>
             <a onclick="selectAndChange('Social Science','searchProgramValue','programListDropDown')">Social Science</a>
@@ -386,8 +388,8 @@
       </div>
     </header>
     <article>
-      <ul class="courseList hidden">
-        <li class="courseItem" id="econ1b03">
+      <ul class="courseList">
+        <li class="courseItem hidden" id="econ1bo3">
           <h3 class="courseItem-Title">Econ 1B03 Introductory Microeconomics</h3>
           <div class="courseItem-Content">
             <h4><span class="courseRequirements">Core</span><span class="coursetimePerWeek">3 hours / week</span></h4>
@@ -396,7 +398,7 @@
 
           </div>
         </li>
-        <li class="courseItem" id="econ1bb3">
+        <li class="courseItem hidden" id="econ1bb3">
           <h3 class="courseItem-Title">Econ 1BB3 Introductory Macroeconomics</h3>
           <div class="courseItem-Content">
             <h4><span class="courseRequirements">Core</span><span class="coursetimePerWeek">3 hours / week</span></h4>
@@ -405,7 +407,7 @@
 
           </div>
         </li>
-        <li class="courseItem" id="JC3search">
+        <li class="courseItem hidden" id="JC3search">
           <h3 class="courseItem-Title">Comp Sci 1JC3 Intro to Computational Thinking</h3>
           <div class="courseItem-Content">
             <h4><span class="courseRequirements">Core + Tutorial</span><span class="coursetimePerWeek">5 hours / week</span></h4>
@@ -414,7 +416,7 @@
 
           </div>
         </li>
-        <li class="courseItem">
+        <li class="courseItem hidden" id="psych1xo3">
           <h3 class="courseItem-Title">Psychology 1XO3 Introduction to Behaviour Psychology</h3>
           <div class="courseItem-Content">
             <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">6 hours / week</span></h4>
@@ -423,7 +425,7 @@
 
           </div>
         </li>
-        <li class="courseItem">
+        <li class="courseItem hidden" id="psych1xx3">
           <h3 class="courseItem-Title">Psychology 1XX3 Introduction to Neuroscience</h3>
           <div class="courseItem-Content">
             <h4><span class="courseRequirements">Core + Lab + Tutorial</span><span class="coursetimePerWeek">6 hours / week</span></h4>

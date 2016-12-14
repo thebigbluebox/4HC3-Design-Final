@@ -33,4 +33,9 @@ function toggleDiv(id) {
 function selectAndChange(value, LabelName, CloseDiv){
     $("#"+LabelName).html("[" + value + "]");
     $("#"+CloseDiv).removeClass("show")
+    if(LabelName == "searchYearValue"){
+        yearSearchVariable = value;
+    } else {
+        programSearchVariable = value;
+    }
 }
