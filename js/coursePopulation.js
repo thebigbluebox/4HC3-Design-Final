@@ -31,14 +31,70 @@ function showJc3(){
     $("#JC3new").css("display","block");
     $("#warningmessage").removeClass("hidden");
     $("#inital").addClass("hidden");
+    $("#numberCoursesLeft").html("1");
+    $("#finishButton").removeClass("red");
 }
+
+$("#JC3new").click(function(){
+    $("#JC3new").css("background-color","darkgray")
+    selectCore();
+    $(".JC3C1").css("display","block");
+});
 
 function selectCore(){
     $("#selectingCoreMessage").css("display","block");
     $("#warningmessage").css("display","none");
 }
-$(document)
-$("#JC3new").click(function(){
-    $("#JC3new").css("background-color","darkgray")
-    selectCore();
+
+// These two variables will determine if the hover below will be set
+var C1 = true;
+var T = true;
+$(".JC3C1").click(function(){
+    $(".JC3C1").css("color","gray")
+    hoverByClass("JC3C1","#BAF2BB" , "#BAF2BB");
+    // disable hover coloring
+    $(".JC3T1").css("display","block");
+    $(".JC3T2").css("display","block");
+    $(".JC3T3").css("display","block");
+    $("#selectingCoreMessage").css("display","none");
+    $("#selectinTutorialMessage").css("display","block");
 });
+
+$(".JC3T1").click(function(){
+    $(".JC3T1").css("color","gray")
+    hoverByClass("JC3T1","#F2E2BA" , "#F2E2BA");
+    // disable hover coloring
+    $(".JC3T2").css("display","none");
+    $(".JC3T3").css("display","none");
+
+    $("#numberCoursesLeft").html("0");
+    $("#finishButton").addClass("red");
+    $("#inital").css("display","block");
+    $("#JC3new").css("background-color","#27AE60")
+});
+
+// code sourced from http://stackoverflow.com/questions/12786810/hover-on-element-and-highlight-all-elements-with-the-same-class
+function hoverByClass(classname,colorover,colorout="transparent"){
+    var elms=document.getElementsByClassName(classname);
+    for(var i=0;i<elms.length;i++){
+        elms[i].onmouseover = function(){
+            for(var k=0;k<elms.length;k++){
+                elms[k].style.backgroundColor=colorover;//colorover;
+            }
+        };
+        elms[i].onmouseout = function(){
+            for(var k=0;k<elms.length;k++){
+                elms[k].style.backgroundColor=colorout;
+            }
+        };
+    }
+}
+
+    hoverByClass("JC3C1","yellow" , "#BAF2BB");
+
+    hoverByClass("JC3T1","yellow" , "#F2E2BA");
+    hoverByClass("JC3T2","yellow" , "#F2E2BA");
+    hoverByClass("JC3T3","yellow" , "#F2E2BA");
+
+
+//hoverByClass("","yellow");

@@ -120,15 +120,15 @@ table tbody tr td.hour span {
   justify-content: center;
 }
 
-.JC3C1:hover {
-  background-color: red;
-}
-
 .JC3C1 {
+  display: none;
+  color: black;
   background-color: #BAF2BB;
 }
 
 .JC3T1, .JC3T2, .JC3T3 {
+  display: none;
+  color: black;
   background-color: #F2E2BA;
 }
 
