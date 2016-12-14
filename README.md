@@ -17,3 +17,9 @@ ITB AB102
 Core 1: 5:30PM to 6:20PM (Monday, Wednesday, Thursday) ITB AB102
 Tutorial 1: 3:30PM to 4:20PM (Monday) BSB 249
 Tutorial 2: 4:30 to 5:20 BSB (Thursday) 249
+
+GEOGRAPHY 1HA3
+Mercier
+MDCL 1305
+Core 1: 9:30AM to 10:20AM (Tuesday, Friday)
+Tutorial 1: 
