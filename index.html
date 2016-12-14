@@ -337,32 +337,35 @@
         </form>
       </div>
 
-      <button class="blue button button-lg centerAlign topMargin" onclick="toggleDiv('searchFilters')">Open Filter</button>
+      <button id="filterButton" class="blue button button-lg centerAlign topMargin" onclick="toggleDiv('searchFilters')">Use Filters</button>
       <div class="hidden searchFilters" id="searchFilters">
         <div class="dropdown">
-          <button onclick="dropDownFunc('yearListDropDown')" class="centerAlign dropbtn button-lg darkgray topMargin">Program Year</button>
+          <button onclick="dropDownFunc('yearListDropDown')" class="centerAlign dropbtn button-lg darkgray topMargin">Program Year <span id="searchYearValue"></span></button>
           <div id="yearListDropDown" class="dropdown-content">
             <input type="text" class=" fullWidth" placeholder="Search.." id="yearListDropDownSearchInput" onkeyup="filterFunction('yearListDropDownSearchInput','yearListDropDown')">
-            <a href="#about">1</a>
-            <a href="#base">2</a>
-            <a href="#blog">3</a>
-            <a href="#contact">4</a>
-            <a href="#custom">5</a>
-            <a href="#support">6</a>
+            <a onclick="selectAndChange(1,'searchYearValue','yearListDropDown')">1</a>
+            <a onclick="selectAndChange(2,'searchYearValue','yearListDropDown')">2</a>
+            <a onclick="selectAndChange(3,'searchYearValue','yearListDropDown')">3</a>
+            <a onclick="selectAndChange(4,'searchYearValue','yearListDropDown')">4</a>
+            <a onclick="selectAndChange(5,'searchYearValue','yearListDropDown')">5</a>
+            <a onclick="selectAndChange(6,'searchYearValue','yearListDropDown')">6</a>
           </div>
         </div>
         </br>
         <!-- End of first dropdown begin second one below-->
         <div class="dropdown">
-          <button onclick="dropDownFunc('programListDropDown')" class="centerAlign dropbtn button-lg darkgray topMargin">Program</button>
+          <button onclick="dropDownFunc('programListDropDown')" class="centerAlign dropbtn button-lg darkgray topMargin">Program <span id="searchProgramValue"></span></button>
           <div id="programListDropDown" class="dropdown-content">
             <input type="text" class=" fullWidth" placeholder="Search.." id="programListDropDownSearchInput" onkeyup="filterFunction('programListDropDownSearchInput','programListDropDown')">
-            <a href="#about">Engineering</a>
-            <a href="#base">Humanities</a>
-            <a href="#blog">Communication Science</a>
-            <a href="#blog">Computer Science</a>
-            <a href="#contact">Arts and Science</a>
-            <a href="#custom">Commerce</a>
+            <a onclick="selectAndChange('Engineering','searchProgramValue','programListDropDown')">Engineering</a>
+            <a onclick="selectAndChange('Arts & Humanities','searchProgramValue','programListDropDown')">Arts and Humanities</a>
+            <a onclick="selectAndChange('Integrated Science','searchProgramValue','programListDropDown')">Integrated Sciences</a>
+            <a onclick="selectAndChange('Nursing','searchProgramValue','programListDropDown')">Nursing</a>
+            <a onclick="selectAndChange('Commerce','searchProgramValue','programListDropDown')">Commerce</a>
+            <a onclick="selectAndChange('Psychology','searchProgramValue','programListDropDown')">Psychology</a>
+            <a onclick="selectAndChange('Neuroscience','searchProgramValue','programListDropDown')">Neuroscience</a>
+            <a onclick="selectAndChange('Social Science','searchProgramValue','programListDropDown')">Social Science</a>
+            <a onclick="selectAndChange('Biology','searchProgramValue','programListDropDown')">Biology</a>
           </div>
         </div>
         <!--End of search list dropdowns-->
@@ -402,6 +405,7 @@
   </section>
 </body>
 <script src="assets/jquery-3.1.1.min.js"></script>
+<script src="js/globalVariable.js"></script>
 <script src="js/dropDown.js"></script>
 
 </HTML>

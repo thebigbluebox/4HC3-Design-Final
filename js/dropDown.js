@@ -17,6 +17,20 @@ function filterFunction(inputId,dropdownId) {
     }
 }
 
+// Toggle the filter view
 function toggleDiv(id) {
+    // Set global variable for filter opened
+    filterOpen = !filterOpen;
     document.getElementById(id).classList.toggle("show");
+    if(filterOpen){
+        $("#filterButton").html("Disable Filters");
+    } else {
+        $("#filterButton").html("Use Filters");
+    }   
+}
+
+// Changing values to the year select
+function selectAndChange(value, LabelName, CloseDiv){
+    $("#"+LabelName).html("[" + value + "]");
+    $("#"+CloseDiv).removeClass("show")
 }
