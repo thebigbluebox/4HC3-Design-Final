@@ -1,7 +1,7 @@
 function resetHiddenCourse(){
     $("#psych1xo3").addClass("hidden");
     $("#psych1xx3").addClass("hidden");
-    $("#econ1bo3").addClass("hidden");
+    $("#econ1b03").addClass("hidden");
     $("#econ1bb3").addClass("hidden");
     $("#JC3search").addClass("hidden");
     $("#eng1c03").addClass("hidden");
