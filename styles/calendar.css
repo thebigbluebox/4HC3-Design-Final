@@ -113,15 +113,34 @@ table tbody tr td.hour span {
   }
 }
 
-#JC3, #JC3T1 {
+#JC3C1, #JC3T1, #JC3T2, #JC3T3, #MD3C1, #MD3T1, #MD3T2, #HA3C1, #HA3T1, #HA3T3 {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ACECA1;
 }
 
-#JC3T1 {
+#JC3C1 {
+  background-color: #BAF2BB;
+}
+
+#JC3T1, #JC3T2, #JC3T3 {
+  background-color: #F2E2BA;
+}
+
+#MD3C1 {
+  background-color: #9BC1BC;
+}
+
+#MD3T1, #MD3T2 {
+  background-color: #F2BAC9;
+}
+
+#HA3C1 {
+  background-color: #8DDCA4;
+}
+
+#HA3T1, #HA3T2 {
 
 }
