@@ -22,4 +22,11 @@ GEOGRAPHY 1HA3
 Mercier
 MDCL 1305
 Core 1: 9:30AM to 10:20AM (Tuesday, Friday)
-Tutorial 1: 
+Tutorial 1:
+
+MATH 2ZZ3
+Wolkowicz
+Core 1: 11:30 - 12:20 (Monday, Wednesday, Friday)
+Tutorial 1: 10:30 - 11:20 Monday TSH B128
+Tutorial 2: 10:30 - 11:20 Friday TSH B128
+LRW B1007
