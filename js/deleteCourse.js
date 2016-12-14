@@ -20,6 +20,7 @@ function dropCourse(classType,idType){
     $("#cc" + classType + "d").removeClass("hidden");
 }
 
+//This function allows user to commit changes to after dropping course
 function commitDropCourses(){
     if( droppedCourses.length > 0){
     var confirmation = confirm("Are you sure you want to drop these courses?");
@@ -32,6 +33,7 @@ function commitDropCourses(){
     }
 }
 
+//this function allows user to add back course after deleting it
 function addBackCourse(classType,idType){
  var confirmation = confirm("Are you sure you want to add back " + classType + "?");
  if(confirmation){
