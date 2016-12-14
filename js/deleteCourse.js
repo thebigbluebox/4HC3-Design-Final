@@ -48,7 +48,6 @@ function addBackCourse(classType,idType){
         if(i != -1) {
 	       console.log(droppedCourses.splice(i, 1));
         }
-     
  }
 
 }
