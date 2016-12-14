@@ -6,8 +6,13 @@ function finish(){
 
 
 // This is when we delete a course and it will remove the classes
-function deleteCourse(classType, id){
-    $("." + classType).css("display","block");
+function deleteCourse(classType,idType){
+    $("." + classType + "C1").css("display","none");
+    $("." + classType + "T1").css("display","none");
+    $("." + classType + "T2").css("display","none");
+    $("." + classType + "T3").css("display","none");
+    $("#cc" + classType).css("display","none");
+    $("#" + idType).css("display","none");
 }
 
 // This will select the course that is clicked on
@@ -66,6 +71,32 @@ $(".JC3T1").click(function(){
     // disable hover coloring
     $(".JC3T2").css("display","none");
     $(".JC3T3").css("display","none");
+
+    $("#numberCoursesLeft").html("0");
+    $("#finishButton").addClass("red");
+    $("#inital").css("display","block");
+    $("#JC3new").css("background-color","#27AE60")
+});
+
+$(".JC3T2").click(function(){
+    $(".JC3T2").css("color","gray")
+    hoverByClass("JC3T2","#F2E2BA" , "#F2E2BA");
+    // disable hover coloring
+    $(".JC3T1").css("display","none");
+    $(".JC3T3").css("display","none");
+
+    $("#numberCoursesLeft").html("0");
+    $("#finishButton").addClass("red");
+    $("#inital").css("display","block");
+    $("#JC3new").css("background-color","#27AE60")
+});
+
+$(".JC3T3").click(function(){
+    $(".JC3T3").css("color","gray")
+    hoverByClass("JC3T1","#F2E2BA" , "#F2E2BA");
+    // disable hover coloring
+    $(".JC3T1").css("display","none");
+    $(".JC3T2").css("display","none");
 
     $("#numberCoursesLeft").html("0");
     $("#finishButton").addClass("red");
