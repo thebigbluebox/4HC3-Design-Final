@@ -25,6 +25,10 @@
     box-shadow: 3px 3px 22px 1px rgba(0,0,0,0.75);
 }
 
+.courseOutLine {
+  color: #3B99FC;
+}
+
 .courseItemDone{
   margin-top: 18px;
   color: black;

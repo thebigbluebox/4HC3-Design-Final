@@ -2,7 +2,7 @@ var droppedCourses = [];
 
 // This is when we delete a course and it will remove the classes
 function deleteCourse(classType, idType) {
-    var confirmation = confirm("are you sure you want to delete " + classType);
+    var confirmation = confirm("Are you sure you want to delete " + classType + "?");
     if (confirmation) {
         $("." + classType + "C1").css("display", "none");
         $("." + classType + "T1").css("display", "none");

@@ -105,9 +105,9 @@ function hoverByClass(classname, colorover, colorout = "transparent") {
 
 hoverByClass("JC3C1", "yellow", "#BAF2BB");
 
-hoverByClass("JC3T1", "yellow", "#F2E2BA");
-hoverByClass("JC3T2", "yellow", "#F2E2BA");
-hoverByClass("JC3T3", "yellow", "#F2E2BA");
+hoverByClass("JC3T1", "yellow", "#BAF2BB");
+hoverByClass("JC3T2", "yellow", "#BAF2BB");
+hoverByClass("JC3T3", "yellow", "#BAF2BB");
 
 function gotoNext(){
     var nextElement = $("").next();
