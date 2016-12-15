@@ -1,7 +1,7 @@
 function resetHiddenCourse(){
     $("#psych1xo3").addClass("hidden");
     $("#psych1xx3").addClass("hidden");
-    $("#econ1b03").addClass("hidden");
+    $("#econ1bo3").addClass("hidden");
     $("#econ1bb3").addClass("hidden");
     $("#JC3search").addClass("hidden");
     $("#eng1c03").addClass("hidden");
@@ -10,6 +10,18 @@ function resetHiddenCourse(){
     $("#eng1p03").addClass("hidden");
     $("#eng1b03").addClass("hidden");
     $("#eng1ec0").addClass("hidden");
+    $("#commerce1aa3").addClass("hidden");
+    $("#commerce1b03").addClass("hidden");
+    $("#commerce1ba3").addClass("hidden");
+    $("#commerce1de3").addClass("hidden");
+    $("#commerce1e03").addClass("hidden");
+    $("#art1dm3").addClass("hidden");
+    $("#art1mi3").addClass("hidden");
+    $("#art1os3").addClass("hidden");
+    $("#art1si3").addClass("hidden");
+    $("#art1ui3").addClass("hidden");
+    $("#art1ti3").addClass("hidden");
+
 }
 
 // Handling of form using js taken from stackoverflow http://stackoverflow.com/questions/5384712/capture-a-form-submit-in-javascript
