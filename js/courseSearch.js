@@ -62,11 +62,11 @@ function processForm(e) {
     if(filterOpen && yearSearchVariable && programSearchVariable){
         if(yearSearchVariable == 1 && programSearchVariable == "Psychology"){
             $("#psych1xo3").removeClass("hidden");
-            $("#psych1xx3").removeClass("hidden");   
+            $("#psych1xx3").removeClass("hidden");
         }
         if(yearSearchVariable == 1 && programSearchVariable == "Economics"){
             $("#econ1bo3").removeClass("hidden");
-            $("#econ1bb3").removeClass("hidden");   
+            $("#econ1bb3").removeClass("hidden");
         }
         if(yearSearchVariable == 1 && programSearchVariable == "Computer Science"){
             $("#JC3search").removeClass("hidden");
@@ -78,6 +78,21 @@ function processForm(e) {
             $("#eng1p03").removeClass("hidden");
             $("#eng1b03").removeClass("hidden");
             $("#eng1ec0").removeClass("hidden");
+        }
+        if(yearSearchVariable == 1 && programSearchVariable == "Commerce") {
+          $("#commerce1aa3").removeClass("hidden");
+          $("#commerce1b03").removeClass("hidden");
+          $("#commerce1ba3").removeClass("hidden");
+          $("#commerce1de3").removeClass("hidden");
+          $("#commerce1e03").removeClass("hidden");
+        }
+        if(yearSearchVariable == 1 && programSearchVariable == "Art") {
+          $("#art1dm3").removeClass("hidden");
+          $("#art1mi3").removeClass("hidden");
+          $("#art1os3").removeClass("hidden");
+          $("#art1si3").removeClass("hidden");
+          $("#art1ti3").removeClass("hidden");
+          $("#art1ui3").removeClass("hidden");
         }
     }
 
