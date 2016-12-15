@@ -49,7 +49,7 @@ $(".JC3C1").click(function () {
 
 $(".JC3T1").click(function () {
     $(".JC3T1").css("color", "gray")
-    hoverByClass("JC3T1", "#F2E2BA", "#F2E2BA");
+    hoverByClass("JC3T1", "#BAF2BB", "#BAF2BB");
     // disable hover coloring
     $(".JC3T2").css("display", "none");
     $(".JC3T3").css("display", "none");
@@ -62,7 +62,7 @@ $(".JC3T1").click(function () {
 
 $(".JC3T2").click(function () {
     $(".JC3T2").css("color", "gray")
-    hoverByClass("JC3T2", "#F2E2BA", "#F2E2BA");
+    hoverByClass("JC3T2", "#BAF2BB", "#BAF2BB");
     // disable hover coloring
     $(".JC3T1").css("display", "none");
     $(".JC3T3").css("display", "none");
@@ -75,7 +75,7 @@ $(".JC3T2").click(function () {
 
 $(".JC3T3").click(function () {
     $(".JC3T3").css("color", "gray")
-    hoverByClass("JC3T1", "#F2E2BA", "#F2E2BA");
+    hoverByClass("JC3T1", "#BAF2BB", "#BAF2BB");
     // disable hover coloring
     $(".JC3T1").css("display", "none");
     $(".JC3T2").css("display", "none");
